@@ -555,7 +555,7 @@ function normalizeCategoryKey(category) {
 }
 
 export function getCommandPrefix() {
-  return botConfig.commands?.prefix ?? "!";
+  return botConfig.commands?.prefix ?? "m";
 }
 
 export function getBotOwners() {
