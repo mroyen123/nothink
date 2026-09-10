@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "JOIN CAT GARDEN NOW!",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -50,9 +50,9 @@ export const botConfig = {
     // When true (or MAINTENANCE_MODE=true), only bot owners can run commands.
     maintenanceMode: process.env.MAINTENANCE_MODE === "true",
 
-    // Command prefix for text-based commands (e.g., "!" for "!ping").
+    // Command prefix for text-based commands (e.g., "m" for "mping").
     // Supports both slash commands and prefix commands.
-    prefix: process.env.PREFIX || "!",
+    prefix: process.env.PREFIX || "m",
   },
 
   // =========================
