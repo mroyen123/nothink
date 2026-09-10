@@ -72,7 +72,7 @@ function isSubcommandBlocked(commandName, subcommandName) {
  * @returns {{ blocked: boolean, reason?: string }}
  */
 export function getPrefixRestriction(command, args, resolveSubcommandAlias) {
-  if (.command?.data?.toJSON) {
+  if (!command?.data?.toJSON) {
     return { blocked: false };
   }
 
